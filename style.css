@@ -1,0 +1,230 @@
+/* Make carousel take full height */
+#heroCarousel,
+.carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Add dark overlay */
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+/* Center text perfectly */
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  bottom: auto;
+}
+
+/* Caption text style */
+.carousel-caption h1 {
+  color: #fff;
+  font-size: 2.8rem;
+}
+
+.carousel-caption p {
+  color: #f1f1f1;
+  max-width: 700px;
+}
+
+/* Fix button color */
+.carousel-caption .btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.carousel-caption .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Indicators position */
+.carousel-indicators {
+  bottom: 20px;
+  z-index: 3;
+}
+
+/* Responsive text sizing */
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 1.8rem;
+  }
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+}
+body {
+  padding-top: 80px; /* Adjust depending on navbar height */
+}
+body {
+  padding-top: 100px; /* Increased because navbar is taller now */
+}
+/* Our Package Section */
+#packages .card {
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#packages .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* HOT Badge Styling */
+.hot-badge {
+  top: 15px;
+  right: 18px;
+  font-size: 0.85rem;
+  padding: 6px 10px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
+#packages .btn {
+  border-radius: 8px;
+}
+
+#packages .btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+#packages .btn-light:hover {
+  background-color: #fff;
+  color: #0d6efd;
+}
+/* Highlighted Card */
+.highlight-card {
+  background: linear-gradient(135deg, #0d6efd 0%, #0049c7 100%);
+  border-radius: 15px;
+  overflow: visible; /* allows the HOT badge to stick out */
+  position: relative;
+}
+
+/* HOT Badge (Half Outside Corner) */
+
+  
+
+/* .highlight-card {
+  background: linear-gradient(135deg, #0d6efd 0%, #0049c7 100%);
+  border-radius: 15px;
+  overflow: visible; 
+  position: relative;
+} */
+
+/* HOT Badge (Half Outside Corner) */
+.hot-badge {
+  position: absolute;
+  top: -12px;   
+  right: -12px; 
+  background-color: #dc3545;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 6px 12px;
+  border-radius: 6px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+/* Happy Clients */
+#clients .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#clients .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.client-img img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+/* FAQ Section */
+#faq img {
+  border-radius: 20px;
+  object-fit: cover;
+}
+#faq .accordion-button {
+  background-color: #fff;
+  color: #212529;
+  border-radius: 10px !important;
+}
+#faq .accordion-button:not(.collapsed) {
+  background-color: #0d6efd;
+  color: white;
+}
+#faq .accordion-body {
+  background-color: #f8f9fa;
+  border-radius: 0 0 10px 10px;
+}
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 70vh;
+  }
+}
+.carousel-caption a:hover {
+  text-decoration: underline;
+  color: #ffd700; /* gold hover */
+}
+
+
+
+/* .social-icon img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1); 
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .social-icon:hover img {
+    transform: scale(1.15);
+    filter: brightness(0.8) invert(0.8); 
+  }
+
+  @media (max-width: 576px) {
+    .social-icon img {
+      width: 26px;
+      height: 26px;
+    }
+  } */
+
+/* ====== Footer Section ====== */
+.footer-section {
+  background-color: #111;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.footer-section .social-icons a {
+  color: inherit;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+/* Official brand colors */
+.footer-section .social-icons a[href*="facebook"] i { color: #1877F2; }
+.footer-section .social-icons a[href*="youtube"] i { color: #FF0000; }
+.footer-section .social-icons a[href*="linkedin"] i { color: #0A66C2; }
+.footer-section .social-icons a[href*="instagram"] i { color: #E4405F; }
+
+.footer-section .social-icons a:hover i {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+

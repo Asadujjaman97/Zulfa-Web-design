@@ -228,3 +228,9 @@ body {
 }
 
 
+html {
+  scroll-behavior: smooth;
+}
+
+
+

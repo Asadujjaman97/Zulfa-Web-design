@@ -14,8 +14,16 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
+  <style>
+html {
+  scroll-behavior: smooth;
+}
+</style>
+
+
   <!-- Your main stylesheet -->
   <link rel="stylesheet" href="./style.css">
+  
 </head>
 <body>
   <!-- reuse your navbar (copy from index.html) -->
@@ -106,7 +114,8 @@
       <div class="col-md-8 col-lg-6">
         <div class="card shadow-sm p-4">
           
-    <form name="contact" method="POST" data-netlify="true" action="./thankyou.html">
+    <section id="form-section">
+<form name="contact" method="POST" data-netlify="true" action="./thankyou.html">
   <input type="hidden" name="form-name" value="contact">
 
   <div class="mb-3">
@@ -131,6 +140,8 @@
 
   <button type="submit" class="btn btn-primary w-100 fw-semibold">Submit Now</button>
 </form>
+    </section>
+
 
         </div>
       </div>
@@ -138,5 +149,15 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  // Smooth scroll to form section if #form-section is in URL
+  window.addEventListener('load', () => {
+    const formSection = document.getElementById('form-section');
+    if (window.location.hash === '#form-section' && formSection) {
+      formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+</script>
+
 </body>
 </html>

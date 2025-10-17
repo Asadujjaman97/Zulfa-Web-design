@@ -53,6 +53,33 @@
   bottom: 20px;
   z-index: 3;
 }
+/* carousel indicators mobile screen responsive trial */
+
+@media (max-width: 770px) {
+  .carousel-indicators {
+  gap: 6px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 8rem;
+    margin-left: 15%;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 3px;
+  }
+
+  .carousel-indicators .active {
+    width: 28px;
+  }
+}
+
+
+
 
 /* Responsive text sizing */
 @media (max-width: 768px) {

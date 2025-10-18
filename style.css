@@ -50,12 +50,13 @@
 
 /* Indicators position */
 .carousel-indicators {
-  bottom: 20px;
+  bottom: 100px;
   z-index: 3;
 }
+
 /* carousel indicators mobile screen responsive trial */
 
-@media (max-width: 750px) {
+@media (max-width: 765px) {
   .carousel-indicators {
   gap: 6px;
     position: absolute;
@@ -64,7 +65,7 @@
     justify-content: center;
     padding: 0;
     margin-right: 15%;
-    margin-bottom: 07rem;
+    margin-bottom: 12rem;
     margin-left: 15%;
   }
 
@@ -78,6 +79,14 @@
   }
 }
 
+/* MODIFYING 18 OCT 4-48 */
+#heroCarousel .carousel-item img {
+  height: 85vh;        
+  object-fit: cover;
+}
+@media (max-width:768px){
+  #heroCarousel .carousel-item img { height: 60vh; }
+}
 
 
 
@@ -137,7 +146,7 @@ body {
 .highlight-card {
   background: linear-gradient(135deg, #0d6efd 0%, #0049c7 100%);
   border-radius: 15px;
-  overflow: visible; /* allows the HOT badge to stick out */
+  overflow: visible; 
   position: relative;
 }
 

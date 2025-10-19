@@ -53,10 +53,12 @@
   bottom: 100px;
   z-index: 3;
 }
-.carousel-indicators
-Specificity: (0,1,0)
+.carousel-indicators{
+
     bottom: 100px;
     z-index: 3;
+
+}
 
     /* carousel indicators mobile screen responsive trial */
 
